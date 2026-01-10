@@ -1,0 +1,37 @@
+# ENV & secrets
+.env
+.env.*
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+logs/
+
+# Build
+dist/
+build/
+coverage/
+
+# MongoDB local data
+data/
+db/
+mongo-data/
+
+# Java
+*.class
+target/
+*.jar
+*.war
+
+# Uploads
+uploads/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
