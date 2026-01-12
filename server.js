@@ -1,5 +1,6 @@
 // requires
 const express = require('express');
+const path = require('path');
 // dotenv require
 require('dotenv').config();
 
@@ -9,11 +10,17 @@ const app = express();
 // env init
 const PORT = process.env.PORT;
 
-// test route 
-app.get("/", (req , res) => {
+// Serve static files from the 'public' directory
 
-    res.end('server is good !')
+app.get('/login', (req , res) => {
+    res.sendFile(path.join(__dirname,'login.html'))
 })
+
+// test route 
+// app.post("/login", (req , res) => {
+
+//     res.end('server is good !')
+// })
 
 
 
